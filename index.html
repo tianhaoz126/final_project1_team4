@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splashes | Dive into Adventure</title>
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Splashes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="class.html">Classes & Schedules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallary.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="container text-center">
+            <slogan></slogan>
+            <p>Unlock the world of swimming for your child with our expertly crafted lessons.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#registerModal">Register Now</button>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <section class="container px-5">
+            <h2 class='my-4'>About Splashes</h2>
+            <p>At Splashes, we prioritize safety, fun, and skill development. Our lessons are tailored for children of
+                all ages, ensuring they gain confidence and technique with every splash they make!</p>
+            <img src="images/index-girl.jpg" alt="Children enjoying swimming" class="img-fluid">
+        </section>
+    </section>
+
+    <!-- Classes -->
+    <section class="classes">
+        <section class="container">
+            <h2 class="my-2">Our Classes</h2>
+            <div class="row">
+
+                <!-- Beginner Class -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/index-beginner.jpg" class="card-img-top" alt="Beginner's Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Beginner's Class</h5>
+                            <p class="card-text">Perfect for kids taking their first dive. Learn basic movements and
+                                water
+                                confidence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate Class -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/index-Intermediate.jpg" class="card-img-top" alt="Intermediate Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Intermediate Class</h5>
+                            <p class="card-text">For kids who have mastered the basics and are ready for advanced
+                                techniques.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Class -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/index-advanced.jpg" class="card-img-top" alt="Advanced Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Class</h5>
+                            <p class="card-text">Train your child with complex techniques and endurance
+                                training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Parents Say</h2>
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>"My child absolutely loves the lessons at Splashes. The instructors are so friendly and patient."
+                    </p>
+                    <small>- Jane Doe</small>
+                </div>
+                <div class="carousel-item">
+                    <p>"The progress my son has made in just a few months is astounding. Thank you, Splashes!"</p>
+                    <small>- John Smith</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register for a Class</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="childName">Child's Name</label>
+                            <input type="text" class="form-control" id="childName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentEmail">Parent's Email</label>
+                            <input type="email" class="form-control" id="parentEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="classSelection">Select Class</label>
+                            <select class="form-control" id="classSelection">
+                                <option>Beginner's Class</option>
+                                <option>Intermediate Class</option>
+                                <option>Advanced Class</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Time</label>
+                            <input type="time" class="form-control" id="preferredTime">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2023 Splashes Swimming Lessons</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

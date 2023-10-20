@@ -1,0 +1,347 @@
+/* Updated Colors for the website */
+:root {
+    --primary-color: #007BFF;
+    /* Vibrant Blue */
+    --secondary-color: #17a2b8;
+    /* Teal */
+    --tertiary-color: #ffc107;
+    /* Golden for contrast */
+    --light-shade: #f8f9fa;
+    /* Light gray background */
+    --dark-shade: #343a40;
+    /* Dark gray for footer */
+}
+
+
+/* Reset some default styles from browsers */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url(images/index-cover.jpg);
+    background-size: cover;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+/* About Section */
+.about {
+    text-align: center;
+    background-color: var(--light-shade);
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    /* margin: 0px; */
+
+}
+
+.about h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.about img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Classes Overview */
+.classes {
+    margin: 50px 0;
+}
+
+.classes .card {
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.classes .card:hover {
+    transform: scale(1.05);
+}
+
+.classes .card-title {
+    color: var(--secondary-color);
+}
+
+
+/* Card Style */
+.card {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    color: #007BFF;
+    /* Bootstrap primary color */
+}
+
+
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.testimonials h2 {
+    color: var(--tertiary-color);
+}
+
+.carousel-inner p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.carousel-inner small {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #343a40;
+    /* Bootstrap dark background color */
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal */
+.modal-header {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+
+/* Page Header */
+.page-header {
+    background-color: #00bcd4;
+    padding: 60px 0;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+/* Class Details */
+.classes-details .class-description {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.classes-details .class-description:hover {
+    transform: translateY(-10px);
+}
+
+.classes-details h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+
+
+/* Class Schedule */
+.schedule {
+    margin-top: 50px;
+}
+
+.schedule table {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.schedule th,
+.schedule td {
+    text-align: center;
+    padding: 15px;
+}
+
+.schedule th {
+    background-color: #74c7b8;
+    color: white;
+}
+
+
+/* Class Registration */
+.registration {
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registration form .btn {
+    background-color: #74c7b8;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.registration form .btn:hover {
+    background-color: #5baa99;
+}
+
+
+/* Instructor */
+.instructor-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.instructor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.instructor-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.instructor-card .card-body {
+    padding: 20px;
+}
+
+.instructor-card .card-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.instructor-card .card-text {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Gallery Filters */
+.gallery-filter {
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.gallery-filter:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Gallery Items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Page Header */
+.contact-page-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 60px 0;
+    margin-bottom: 50px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact Details */
+.contact-details h4 {
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Map */
+.map {
+    margin-top: 50px;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

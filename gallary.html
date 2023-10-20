@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splashes | Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Splashes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="class.html">Classes & Schedules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="instructors.html">Instructors</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link"  href="gallary.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="page-header">
+        <div class="container text-center">
+            <h1>Our Gallery</h1>
+            <p>Relive moments of joy, learning, and achievements from our classes.</p>
+        </div>
+    </header>
+
+    <!-- Image Filtering Options -->
+    <div class="container text-center mt-4">
+        <button class="btn btn-outline-primary gallery-filter" data-filter="all">All</button>
+        <button class="btn btn-outline-secondary gallery-filter" data-filter="Events">Events</button>
+        <button class="btn btn-outline-secondary gallery-filter" data-filter="Lessons">Lessons</button>
+        <button class="btn btn-outline-secondary gallery-filter" data-filter="Fun">Fun Moments</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="gallery container mt-5">
+        <div class="row">
+            <!-- Example Image Card (repeat for each image) -->
+            <div class="col-md-4 mb-4 gallery-item" data-category="Events">
+                <div class="card">
+                    <img src="images/gallery-gala-2023.jpg" alt="Gallery Image 1" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">Annual Swimming Gala 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 gallery-item" data-category="Events">
+                <div class="card">
+                    <img src="images/gallery-comp-2023.jpg" alt="Gallery Image 1" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">Swimming Competition 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 gallery-item" data-category="Events">
+                <div class="card">
+                    <img src="images/gallery-gala-2022.jpg" alt="Gallery Image 1" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">Annual Swimming Gala 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 gallery-item" data-category="Fun">
+                <div class="card">
+                    <img src="images/gallery-pizza-2022.jpg" alt="Gallery Image 1" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">Pizza Party 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 gallery-item" data-category="Events">
+                <div class="card">
+                    <img src="images/gallery-gala-2021.jpg" alt="Gallery Image 1" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">Annual Swimming Gala 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 gallery-item" data-category="Events">
+                <div class="card">
+                    <img src="images/gallery-practice-2021.jpg" alt="Gallery Image 1" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">Daily Practice 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Placeholder (Can be integrated later for an enhanced view of images) -->
+    <!-- ... -->
+
+    <footer class="text-center">
+        <p>&copy; 2023 Splashes Swimming Lessons</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splashes | Classes & Schedules</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Splashes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="class.html">Classes & Schedules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallary.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container text-center">
+            <h1>Classes & Schedules</h1>
+            <p>Discover the right swimming journey for your child.</p>
+        </div>
+    </header>
+
+    <section class="classes-details container">
+        <h2 class="my-2">Class Descriptions</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="class-description">
+                    <img src="images/index-beginner.jpg" alt="Beginner's Class" class="img-fluid mb-3">
+                    <h3>Beginner's Class</h3>
+                    <p>Designed for the little ones setting out on their aquatic adventure. This class focuses on
+                        comfort, basic strokes, and water safety. Every splash they make is a step towards confidence.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="class-description">
+                    <img src="images/index-Intermediate.jpg" alt="Intermediate Class" class="img-fluid mb-3">
+                    <h3>Intermediate Class</h3>
+                    <p>For the young swimmers who have conquered the basics. This class delves into advanced techniques,
+                        diving, and endurance. We will turn paddlers into proficient swimmers by the end of the course.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="class-description">
+                    <img src="images/index-advanced.jpg" alt="Advanced Class" class="img-fluid mb-3">
+                    <h3>Advanced Class</h3>
+                    <p>The deep end for those who dream big! Perfect for kids aiming for competitions or advanced
+                        aquatic activities. We refine techniques, teach new styles, and enhance endurance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule">
+        <section class="container mt-5">
+            <h2>Class Schedules</h2>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Monday</th>
+                        <th>Wednesday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner's</td>
+                        <td>10:00 AM - 11:00 AM</td>
+                        <td>10:00 AM - 11:00 AM</td>
+                        <td>03:00 PM - 04:00 PM</td>
+                        <td>11:00 AM - 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>11:00 AM - 12:00 PM</td>
+                        <td>02:00 PM - 03:00 PM</td>
+                        <td>10:00 AM - 11:00 AM</td>
+                        <td>02:00 PM - 03:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced</td>
+                        <td>03:00 PM - 04:00 PM</td>
+                        <td>11:00 AM - 12:00 PM</td>
+                        <td>11:00 AM - 12:00 PM</td>
+                        <td>03:00 PM - 04:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+
+    <section class="registration container mt-5">
+        <h2>Register Now</h2>
+        <form class="mt-3">
+            <!-- Registration form fields similar to the modal form in Home Page -->
+            <div class="form-group">
+                <label for="childNameFull">Child's Full Name</label>
+                <input type="text" class="form-control" id="childNameFull" required>
+            </div>
+            <div class="form-group">
+                <label for="parentEmailFull">Parent's Email</label>
+                <input type="email" class="form-control" id="parentEmailFull" required>
+            </div>
+            <div class="form-group">
+                <label for="classSelectionFull">Select Class</label>
+                <select class="form-control" id="classSelectionFull">
+                    <option>Beginner's Class</option>
+                    <option>Intermediate Class</option>
+                    <option>Advanced Class</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preferredDate">Preferred Date</label>
+                <input type="date" class="form-control" id="preferredDate" required>
+            </div>
+            <div class="form-group">
+                <label for="preferredTimeFull">Preferred Time</label>
+                <input type="time" class="form-control" id="preferredTimeFull" required>
+            </div>
+            <div class="form-group">
+                <label for="additionalNotes">Additional Notes</label>
+                <textarea class="form-control" id="additionalNotes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2023 Splashes Swimming Lessons</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
